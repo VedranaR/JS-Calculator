@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- add jQuery cdn-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- add Bootstrap cdn-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <title>Basic Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3 border border-dark rounded bg-info mt-4">
+        <h1 class="display-5 text-center mb-4 mt-2 p-3 border border-dark bg-light text-info rounded">
+          Basic Calculator
+        </h1>
+        <div class="row">
+          <input type="text" class="textbox col-md-10 offset-md-1 border border-secondary rounded" readonly>
+        </div>
+        <div class="row">
+          <div class="d-flex flex-column col-md-10 offset-md-1">
+            <div class="btn-group d-flex justify-content-between mt-2" role="group">
+              <button type="button" class="btn btn-warning text-dark rounded mt-2 flex-fill" value="CE">CE</button>
+              <button type="button" class="btn btn-warning text-dark rounded mt-2 flex-fill" value="C">C</button>
+              <button type="button" class="btn btn-warning text-dark rounded mt-2 flex-fill" value="/">/</button>
+              <button type="button" class="btn btn-warning text-dark rounded mt-2 flex-fill" value="*">*</button>
+            </div>
+            <div class="btn-group d-flex justify-content-between mt-2" role="group">
+              <button type="button" class="btn btn-warning text-dark rounded mt-2 flex-fill" value="7">7</button>
+              <button type="button" class="btn btn-warning text-dark rounded mt-2 flex-fill" value="8">8</button>
+              <button type="button" class="btn btn-warning text-dark rounded mt-2 flex-fill" value="9">9</button>
+              <button type="button" class="btn btn-warning text-dark rounded mt-2 flex-fill" value="-">-</button>
+            </div>
+            <div class="btn-group d-flex justify-content-between mt-2" role="group">
+              <button type="button" class="btn btn-warning text-dark rounded mt-2 flex-fill" value="4">4</button>
+              <button type="button" class="btn btn-warning text-dark rounded mt-2 flex-fill" value="5">5</button>
+              <button type="button" class="btn btn-warning text-dark rounded mt-2 flex-fill" value="6">6</button>
+              <button type="button" class="btn btn-warning text-dark rounded mt-2 flex-fill" value="+">+</button>
+            </div>
+            <div class="btn-group d-flex justify-content-between mt-2" role="group">
+              <button type="button" class="btn btn-warning text-dark rounded mt-2 flex-fill" value="1">1</button>
+              <button type="button" class="btn btn-warning text-dark rounded mt-2 flex-fill" value="2">2</button>
+              <button type="button" class="btn btn-warning text-dark rounded mt-2 flex-fill" value="3">3</button>
+              <button type="button" class="btn btn-warning text-dark rounded mt-2 flex-fill" value=".">.</button>
+            </div>
+            <div class="btn-group d-flex justify-content-between mt-2 mb-4" role="group">
+              <button type="button" class="btn btn-warning text-dark rounded mt-2 flex-fill" value="0">0</button>
+              <button type="button" class="btn btn-warning text-dark rounded mt-2 flex-fill" value="%">%</button>
+              <button type="button" class="btn btn-secondary text-light rounded mt-2 flex-fill" value="=">=</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
